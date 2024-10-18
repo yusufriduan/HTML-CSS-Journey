@@ -19,6 +19,8 @@
         width: 250px;
         font-family: Roboto;
         font-weight: bold;
+        font-size: 15px;
+        color: black;
       }
 
       .creator{
@@ -26,32 +28,40 @@
         margin-bottom: 2px;
         font-family: Roboto;
         font-size: 14px;
+        color: grey;
       }
 
       .video-stats{
         margin-top: 3px;
         font-family: Roboto;
         font-size: 14px;
+        color: rgb(95, 95, 95);
       }
     </style>
   </head>
   <body>
     <input class="search-bar" type="Text" placeholder="Search">
     <br>
-    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-      <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
-      <p class="title-video">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-      </p>
-    </a>
 
-    <a href="https://www.youtube.com/c/mkbhd/">
-    <p class="creator">
-      Marques Brownlee &#10003;
-    </p>
-    </a>
-    <p class="video-stats">
-      3.4M views &#183; 6 months ago
-    </p>
+    <section class="video-grid">
+      <div class="video-card">
+        <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+          <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
+          <h3 class="title-video">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </h3>
+        </a>
+    
+        <a style="text-decoration: none;" href="https://www.youtube.com/c/mkbhd/">
+        <p class="creator">
+          Marques Brownlee &#10003;
+        </p>
+        </a>
+        <p class="video-stats">
+          3.4M views &#183; 6 months ago
+        </p>
+      </div>
+    </section>
+    
   </body>
 </html>
