@@ -4,11 +4,54 @@
     <title>YouTube Old Version</title>
     <style>
       .thumbnail{
+        width: 300px;
+        border-radius: 10px;
+      }
+
+      .search-bar{
+        margin: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+
+      .title-video{
+        margin-bottom: 2px;
         width: 250px;
+        font-family: Roboto;
+        font-weight: bold;
+      }
+
+      .creator{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-family: Roboto;
+        font-size: 14px;
+      }
+
+      .video-stats{
+        margin-top: 3px;
+        font-family: Roboto;
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <input class="search-bar" type="Text" placeholder="Search">
+    <br>
+    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+      <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
+      <p class="title-video">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+    </a>
+
+    <a href="https://www.youtube.com/c/mkbhd/">
+    <p class="creator">
+      Marques Brownlee &#10003;
+    </p>
+    </a>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
   </body>
 </html>
