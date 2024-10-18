@@ -17,7 +17,10 @@
       .middle-section{
         align-items: center;
         display: flex;
-        margin-left: 80px;
+        flex: content;
+        margin-left: 0px;
+        max-width: 470px;
+        align-content: center;
       }
       .video-card{
         width: 300px;
@@ -28,6 +31,7 @@
       .video-card:hover{
         box-shadow: 0.45;
       }
+
       .thumbnail{
         width: 300px;
         border-radius: 10px;
@@ -42,6 +46,18 @@
         font-size: 15px;
       }
 
+      .thumbnail-container{
+        position: relative;
+      }
+
+      .video-time{
+        position: absolute;
+        bottom: 7px;
+        right: 4px;
+        color: white;
+        background-color: rgba(0, 0, 0, 100);
+      }
+      
       .title-video{
         margin-bottom: 2px;
         width: 250px;
@@ -81,13 +97,18 @@
 
     <section class="video-grid">
       <div class="video-card">
+        <div class="thumbnail-container">
+          <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
+          </a>
+          <div class="video-time">14:20</div>
+        </div>
+            
         <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-          <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
           <h3 class="title-video">
             Talking Tech and AI with Google CEO Sundar Pichai!
           </h3>
         </a>
-    
         <a style="text-decoration: none;" href="https://www.youtube.com/c/mkbhd/">
         <p class="creator">
           Marques Brownlee &#10003;
