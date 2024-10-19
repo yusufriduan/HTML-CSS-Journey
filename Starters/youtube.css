@@ -48,10 +48,10 @@
   border: 1px, solid, #cccccc;
 }
 
-.search-button-tooltip-container{
-  .search-button{
+.search-button .tooltip-container{
+  .img{
     height: 40px;
-    width: 64px;
+    width: 60px;
     border: 1px, solid, #cccccc;
     border-left: none;
     border-top-right-radius: 2px;
@@ -67,9 +67,6 @@
   }
 }
 
-.search-button{
-  height: 40px;
-}
 
 .tooltip{
   background-color: rgba(96, 96, 96, 0.9);
