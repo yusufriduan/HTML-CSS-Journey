@@ -47,3 +47,32 @@
   font-size: 16px;
   border: 1px, solid, #cccccc;
 }
+
+.search-button-tooltip-container{
+  .search-button{
+    height: 40px;
+    width: 64px;
+    border: 1px, solid, #cccccc;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    margin-right:8px
+  }
+  .tooltip-container{
+    position: relative;
+    display :flex;
+    justify-content: center
+  }
+}
+
+.search-button{
+  height: 40px;
+}
+
+.tooltip{
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+}
