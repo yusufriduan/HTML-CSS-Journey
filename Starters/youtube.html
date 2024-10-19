@@ -1,125 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YouTube Old Version</title>
-    <style>
-      .hamburger-menu{
-        width: 25px;
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-
-      .youtube-logo{
-        width: 100px;
-        margin: 5px;
-      }
-
-      .middle-section{
-        align-items: center;
-        display: flex;
-        flex: content;
-        margin-left: 0px;
-        max-width: 470px;
-        align-content: center;
-      }
-      .video-card{
-        width: 300px;
-        height: 265px;
-        position: center;
-      }
-
-      .video-card:hover{
-        box-shadow: 0.45;
-      }
-
-      .thumbnail{
-        width: 300px;
-        border-radius: 10px;
-      }
-
-      .search-bar{
-        height: 40px;
-        width: 0;
-        padding-left: 12px;
-        flex: 1;
-        border-radius: 10px;
-        font-size: 15px;
-      }
-
-      .thumbnail-container{
-        position: relative;
-      }
-
-      .video-time{
-        position: absolute;
-        bottom: 7px;
-        right: 4px;
-        color: white;
-        background-color: rgba(0, 0, 0, 100);
-      }
-      
-      .title-video{
-        margin-bottom: 2px;
-        width: 250px;
-        font-family: Roboto;
-        font-weight: bold;
-        font-size: 15px;
-        color: black;
-      }
-
-      .creator{
-        margin-top: 2px;
-        margin-bottom: 2px;
-        font-family: Roboto;
-        font-size: 14px;
-        color: grey;
-      }
-
-      .video-stats{
-        margin-top: 3px;
-        font-family: Roboto;
-        font-size: 14px;
-        color: rgb(95, 95, 95);
-      }
-    </style>
+    <title>YouTube</title>
+    <link rel="stylesheet" href="youtube.css">
   </head>
+
   <body>
-    <header>
+    <header class="header">
       <div class="left-section">
-        <img class="hamburger-menu" src="https://supersimple.dev/public/img/exercises/youtube/icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-logo.svg">
+        <img class="hamburger-option" src="https://supersimple.dev/public/img/exercises/youtube/icons/hamburger-menu.svg">
+        <a href="https://www.youtube.com">
+          <img class="youtube-logo" src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-logo.svg">
+        </a>
       </div>
+
       <div class="middle-section">
-        <input class="search-bar" type="Text" placeholder="Search">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="Search-button tooltip-container">
+          <img src="//supersimple.dev/public/img/exercises/youtube/icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
       </div>
     </header>
-    
-
-    <section class="video-grid">
-      <div class="video-card">
-        <div class="thumbnail-container">
-          <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-            <img class="thumbnail"  src="thumbnails/thumbnail-1.webp">
-          </a>
-          <div class="video-time">14:20</div>
-        </div>
-            
-        <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-          <h3 class="title-video">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </h3>
-        </a>
-        <a style="text-decoration: none;" href="https://www.youtube.com/c/mkbhd/">
-        <p class="creator">
-          Marques Brownlee &#10003;
-        </p>
-        </a>
-
-        <p class="video-stats">
-          3.4M views &#183; 6 months ago
-        </p>
-      </div>
-    </section>
-    
   </body>
 </html>
